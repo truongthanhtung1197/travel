@@ -1,0 +1,621 @@
+.app{
+    overflow: hidden;
+}
+.header{
+    
+}
+.header__navbar{
+    display: flex;
+   
+    height: 64px;
+    background-color: var(--white-color);
+    right: 0;
+    left: 0;
+    top: 0;
+    
+}
+.header__navbar-item-icon-bar{    
+    color: #fff;
+    background-color: var(--primary-color);
+    font-size: 3rem;
+    line-height: 64px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__navbar-item-icon-bar:hover{
+    opacity: 0.9;
+}
+.header__navbar-item-hotline{
+   flex: 1;
+   
+}
+
+.header__navbar-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+    flex: 1;
+}
+.header__navbar-item{
+    border-bottom:solid 1px var(--border-color) ;
+    border-right: solid 1px var(--border-color);
+    display: flex;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header__navbar-item-link{
+    display: block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 0 20px;
+    font-weight: 600;
+    line-height: 64px;
+}
+
+.header__navbar-name{
+    font-size: 2rem;
+    padding: 0 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    display: block;
+}
+
+
+.header__navbar-item-link-hotline{
+    flex: 1;
+    text-align: center;
+}
+.header__navbar-item-link:hover{
+    color: 
+    #ffa500;
+}
+.header__navbar-item-link-contact{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.header__navbar-item-link-contact:hover{
+    color: #fff;
+    opacity: 0.9;
+}
+
+
+.header__navbar-item-icon-dow{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 26px;
+    margin-left: 4px;
+}
+
+
+.header__subnav{
+    position: relative;
+    z-index: 1;
+}
+.header__subnav-language{
+    position: absolute;
+    top:100%;
+    left: 0;
+    box-shadow: var(--box-shadow-style);
+    background-color: #fff;
+    animation: headerNotifyGrow ease-in 0.3s;
+    transform-origin: top;
+    will-change: opacity , transform;
+    display: none;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px 0;
+}
+.header__navbar-item:hover .header__subnav-language{
+    display: block;
+
+}
+
+
+@keyframes headerNotifyGrow {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header__subnav-language-item{
+    display: block;
+    position: relative;
+    font-size: 1.3rem;
+    line-height: 2.8rem;
+    color: var(--text-color);
+    padding: 0 20.9px;
+    right: 0;
+    transition: right linear 0.2s;
+    will-change: transition;
+    display: block;
+    cursor: pointer;
+}
+.header__subnav-language-item:hover{
+    color:  #ffa500;
+    right: -4px;
+}
+
+
+.header__subnav-tour-day-list{
+    position: absolute;
+    padding: 10px 0;
+    z-index: 1;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    box-shadow:var(--box-shadow-style) ;
+    background-color: #fff;
+    display: none;
+    width: 100%;
+    animation: headerNotifyGrow linear 0.3s ;
+    transform-origin: top;
+    border-radius: 4px;
+}
+.header__subnav-tour-day-list-item{
+    position: absolute;
+    right: -100%;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 99%;
+    padding: 0;
+    top: 40%;
+    box-shadow:var(--box-shadow-style) ;
+    background-color: #fff;
+    display: none;
+    animation: headerNotifyGrow linear 0.3s ;
+    transform-origin: left;
+    border-radius: 4px;
+    padding: 10px 0;
+}
+.header__subnav-tour-day-list-item::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    top: -10px;
+}
+
+.header__subnav-tour-day-item:hover .header__subnav-tour-day-list-item{
+    display: block;
+   
+}
+.header__subnav-tour-day-item{
+    position: relative;
+    font-size: 1.3rem;
+    line-height: 2.8rem;
+    color: var(--text-color);
+    padding: 0 20.9px;
+    transition: right linear 0.2s;
+    will-change: transition;
+    right: 0;
+    display: block;
+    cursor: pointer;
+}
+.header__subnav-tour-day-item:hover{
+    color: #ffa500;
+    right: -4px;
+}
+.header__navbar-item:hover .header__subnav-tour-day-list{
+    display: block;
+}
+
+/* slider */
+
+.header__slider{
+    padding-top: 45%;
+    background: url('../img/du-lich-da-nang.jpg') bottom center / cover no-repeat;
+    position: relative;
+}
+
+.header__slider-sl{
+    position: absolute;
+    top: 30px;
+    margin-left: 45px;
+}
+.header__slider-text{
+    color: #fff;
+    font-size: 20px;
+}
+.header__slider-text1{
+    color: #fff;
+    font-size: 56px;
+    margin-left: 10px;
+}
+.header__slider-text2{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 182px;
+}
+.header__slider-text3{
+    color: #fff;
+    font-size: 35px;
+}
+/* container -----------------------------------------*/
+.container{
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.container__content-wrap{
+    margin-top: 38px;
+}
+.container__header-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.container__header-item{
+    display: inline-block;
+    font-size: 3.5rem;
+    padding: 21px 5px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 700;
+}
+.container__header-item:nth-child(5),
+.container__header-item:nth-child(9) {
+    margin-left: 10px;
+}
+.container__content{
+    display: block;
+    box-shadow: 0 1px 2px rgba(0 , 0 ,0, 0.3);
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--text-color);
+    position: relative;
+    top: 0;
+    transition: linear top 0.1s;
+    margin-top: 16px;
+    background-color: #fff;
+    
+}
+.container__content:hover {
+    top: -2px;
+    box-shadow: 0 1px 2px rgba(0 , 0 ,0, 0.2);
+}
+
+.container__content-img{
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    position: relative;
+}
+.container__content-star-list{
+    padding: 0;
+    position: absolute;
+    list-style: none;
+    display: flex;
+    bottom: 4px;
+    left: 4px;
+    margin: 0;
+    font-size: 14px;
+}
+.container__content-hot{
+    height: 40px;
+    width: 40px;
+    background-image: linear-gradient(180deg , #ff7e7e , #ff0000 );
+    display: inline-flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    border-radius: 50%;
+    bottom: 0;
+    right: 8px;
+    transform: translatey(50%);
+}
+
+.container__content-hot-text{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.container__content-star-item i{
+    color: yellow;
+    display: inline-block;
+}
+
+
+.container__content-wrap-item{
+    padding: 10px;
+    
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    
+}
+
+.container__content-address{
+    padding: 2px 0 15px 0;
+    text-align: center;
+}
+.container__content-address-icon{
+    color: red;
+    font-size: 2rem;
+    margin-right: 8px;
+}
+
+.container__content-address-name{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.container__content-booking{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+}
+
+
+
+.container__content-booking-price{
+    font-size: 1.4rem;
+    color: red;
+    font-weight: 700;
+
+}
+.container__content-imformation{
+    
+}
+.container__content-imformation-text{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #6f6c6c;
+    line-height: 2rem;
+    height: 6rem;
+    margin: 10px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+/* ---------container2 */
+
+.container__header-item2{
+    display: inline-block;
+    font-size: 3.5rem;
+    padding: 21px 5px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 700;
+}
+.container__header-item2:nth-child(5),
+.container__header-item2:nth-child(10) {
+    margin-left: 10px;
+}
+
+.container2{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: gainsboro;
+}
+
+/* intro__-------------------------- */
+.intro{
+    position: relative;
+    overflow: hidden;
+    margin-top: 70px;
+    
+}
+.intro__content{
+    padding-left: 100px;
+    margin-top: 70px;
+}
+.intro__content-body{
+    display: flex;
+    margin: 30px 0;
+}
+.intro__content-heading{
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--text-color);
+
+   
+}
+.intro__content-body-text + .intro__content-body-text {
+    margin-left: 40px;
+}
+
+.intro__content-body-text{
+    width: 50%;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: var(--text-color);
+}
+.btn-intro{
+    padding: 10px 50px;
+    font-size: 1.8rem;
+}
+.intro__img-list{
+    width: 1000px;
+    position: absolute;
+    margin-top: 50px;
+    height: 200px;
+    display: flex;
+    overflow-x:scroll;
+}
+.intro__img-list::-webkit-scrollbar{
+    display: none;
+}
+.intro__img-item-link + .intro__img-item-link{
+    margin-left: 30px;
+}
+.intro__img-item {
+   width: 200px;
+    height: 200px;
+}
+.intro__img-item1{
+    height: 600px;
+}
+.intro__img-item-link{
+    position: relative;
+    cursor: pointer;
+}
+.intro__img-item-btn.btn{
+    position: absolute;
+    position: absolute;
+    right: 2px;
+    top: 14px;
+    padding: 2px 6px;
+    background-color :rgb(248, 203, 105);
+    min-width: unset;
+}
+
+/* ------------imformation------------------------------------ */
+
+.imformation{
+    height: 400px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imformation-background{
+    height: 400px;
+    width: 100%;
+    /* position: relative; */
+
+
+}
+
+.imformation__body{
+    position: absolute;
+    width: 85%;
+    font-size: 2rem;
+}
+.imformation__body-heading{
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px #996767;
+    margin-bottom: 60px;
+    margin-top: 0;
+    position: relative;
+    display: block;
+    z-index:  1;
+}
+
+.imformation__body-wrap{
+    background-color: #fff;
+    padding: 48px;
+}
+.imformation__body-name-gmail-general{
+    flex: 1;
+    border-style: none;
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 50px;
+    outline: none;
+    color: var(--text-color);
+    font-size: 1.8rem;
+}
+.imformation__body-name-gmail-general + .imformation__body-name-gmail-general{
+    margin-left: 16px;
+}
+.imformation__body-name-gmail{
+    display: flex;
+}
+
+.imformation__body-mess{
+        display: flex;
+        margin-top: 32px;
+
+}
+
+.imformation__body-mess-send{
+    margin-left: 16px;
+    width: 158px;
+}
+
+
+/* ---------------footer------------------- */
+
+.footer {
+    background-color: #555;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+
+}
+.footer__content-wrap {
+    display: flex;
+}
+
+.footer__content{
+    margin: 48px 0;  
+}
+.footer__heading{
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.footer__sub-heading{
+    font-size: 1.7rem;
+    color: #a3a3a4;
+}
+.footer__contact{
+    font-size: 2rem;
+    margin-top: 32px;
+    color: #fff;
+}
+.footer__contact-icon-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 32px;
+    display: flex;
+}
+.footer__contact-icon-item{
+    
+}
+.footer__contact-icon-item-link i{
+    font-size: 2.4rem;
+    color: #fff;
+}
+.footer__contact-icon-item + .footer__contact-icon-item {
+    margin-left: 20px;
+}
+.footer__contact-auth{
+    margin-top: 32px;
+}
+.footer__contact-auth-input{
+    height: 40px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    padding: 0 8px;
+    width: 200px;
+}
+.footer__contact-auth-btn{
+    height: 40px;
+    border: none;
+    font-size: 1.2rem;
+    COLOR: #fff;
+    background-color: red;
+    font-weight: 400;
+    padding: 0 32px;
+    
+}
+
+

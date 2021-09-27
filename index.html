@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid ">
+                <div class="header__navbar">
+                    <i class="header__navbar-item-icon-bar ti-menu"></i>   
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item"><a class="header__navbar-item-link header__navbar-name" href="">DNtravel</a></li>
+                        <li class="header__navbar-item header__subnav"><span class="header__navbar-item-link header__navbar-item-languge" href="">Language <i class="header__navbar-item-icon-dow ti-angle-down" ></i></span>
+                        
+                            <div class="header__subnav-language">
+                                <span class="header__subnav-language-item">English</span>
+                                <span class="header__subnav-language-item">Vietnamese</span>
+                                <span class="header__subnav-language-item">Japanese</span>
+                                <span class="header__subnav-language-item">Korean</span>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item header__subnav"><a class="header__navbar-item-link" href="#tour-day">Tour hàng ngày <i class="header__navbar-item-icon-dow ti-angle-down" ></i></a>
+                            <ul class="header__subnav-tour-day-list">
+                                <li class="header__subnav-tour-day-item">Bà Nà</li>
+                                <li class="header__subnav-tour-day-item">Huế</li>
+                                <li class="header__subnav-tour-day-item">Cù Lao Chàm</li>
+                                <li class="header__subnav-tour-day-item">Hội An</li>
+                                <li class="header__subnav-tour-day-item">Núi Thần Tài</li>
+                                <li class="header__subnav-tour-day-item">Sơn Trà</li>
+                                <li class="header__subnav-tour-day-item">Lý Sơn</li>
+                                <li class="header__subnav-tour-day-item">Mỹ Sơn</li>
+                                <li class="header__subnav-tour-day-item">Phú Quốc</li>
+                            </ul>
+                        </li>
+                        <li class="header__navbar-item header__subnav"><a class="header__navbar-item-link " href="#tour-domestic">Tour trong nước <i class="header__navbar-item-icon-dow ti-angle-down" ></i></a>
+                            <ul class="header__subnav-tour-day-list">
+                                <li class="header__subnav-tour-day-item header__subnav">Miền Bắc
+                                    <ul class="header__subnav-tour-day-list-item">
+                                        <li class="header__subnav-tour-day-item">
+                                            Sapa
+                                        </li>
+                                        <li class="header__subnav-tour-day-item">
+                                            Mộc Châu
+                                        </li>
+                                        <li class="header__subnav-tour-day-item">
+                                            Ninh Bình
+                                        </li>
+                                        <li class="header__subnav-tour-day-item">
+                                            Hạ Long - Yên Tử
+                                        </li>
+                                        <li class="header__subnav-tour-day-item">
+                                            Hà Nội và lân cận
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__subnav-tour-day-item">Miền Trung
+                                    <ul class="header__subnav-tour-day-list-item">
+                                        <li class="header__subnav-tour-day-item">
+                                            Nha Trang
+                                        </li>
+                                        <li class="header__subnav-tour-day-item">
+                                            Đà Lạt
+                                        </li>
+                                        <li class="header__subnav-tour-day-item">
+                                            Bình Định - Phú Yên
+                                        </li>
+                                        <li class="header__subnav-tour-day-item">
+                                            Quảng Bình
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="header__subnav-tour-day-item">Miền Nam
+                                    <ul class="header__subnav-tour-day-list-item">
+                                        <li class="header__subnav-tour-day-item">
+                                            Phú Quốc
+                                        </li>
+                                        <li class="header__subnav-tour-day-item">
+                                            Côn Đảo
+                                        </li>
+                                        <li class="header__subnav-tour-day-item">
+                                            Sài Gòn
+                                        </li>
+                                        <li class="header__subnav-tour-day-item">
+                                            Miền Tây
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-hotline">
+                            <a class="header__navbar-item-link header__navbar-item-link-hotline" href="">
+                                Hotline:(+84) 339957137
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-item-link header__navbar-item-link-contact" href="">
+                                Liên hệ
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__slider">
+                <div class="grid">
+                    <div class="header__slider-sl">
+                        <h1 class="font-nunito header__slider-text" >Hãy Để <span class="font-baloo header__slider-text1" >DNTRAVEL</span></h1>
+                        
+                        <h1 class="font-nunito header__slider-text2" >Đồng Hành Cùng <span class="font-nunito header__slider-text3">CHUYẾN ĐI</span> Của Bạn</h1>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <div class="grid wide">
+            <div class="row  intro">
+                <div class="col l-7">
+                    <div class="intro__content">
+                        <h1 class="intro__content-heading"><i>KHÁM PHÁ ĐÀ NẴNG!</i></h1>
+                        <div class="intro__content-body">
+                            <i class="intro__content-body-text">Đà Nẵng càng đi càng mới! Đó chính là những gì mà bạn sẽ cảm nhận được mỗi khi ghé thăm thành phố xinh đẹp này. Mỗi một nơi ở Đà Nẵng lại mang một nét đẹp mới mẻ mà không ít du khách khi tham quan thường ví đó là cái “duyên thầm” đầy mê hoặc.</i>
+                            <i class="intro__content-body-text"> Nếu bạn là một người thích những cái mới của thành phố này thì hãy cùng chúng tôi khám phá cảnh đẹp Đà Nẵng từ các địa điểm du lịch “hot” nhất dưới đây nhé!</i>
+                        </div>
+                        <div class="intro__btn-wrap">
+                            <button class="btn btn-intro">Các gói đang ưu đãi</button>
+                        </div>
+                        
+                    </div>
+                    <div class="intro__img-list">
+                        <a title="Cầu Vàng BÀ NÀ HILL" class="intro__img-item-link" >
+                            <img class="intro__img-item" src="https://www.taidanang.com/wp-content/uploads/2019/07/kham-pha-canh-dep-da-nang-tu-cac-diem-du-lich-hot-nhat-5.jpg" alt="">
+                            <button class="btn btn--yellow intro__img-item-btn">500.000đ</button>
+                        </a>
+                        <a  title="Công Viên Châu Á" class="intro__img-item-link" >
+                            <img  class="intro__img-item" src="https://khachsandanang.shop/uploads/images/images/gia-ve-sun-world-da-nang.jpg" alt="">
+                            <button class="btn btn--yellow intro__img-item-btn">550.000đ</button>
+                        </a>
+                       
+                        <a  title="chùa Linh Ứng" class="intro__img-item-link" >
+                            <img  class="intro__img-item" src="https://nucuoimekong.com/wp-content/uploads/da-nang-co-gi-dep.jpg" alt="">
+                            <button class="btn btn--yellow intro__img-item-btn">550.000đ</button>
+                        </a>
+                        <a  title="công viên suối khoáng nóng Núi Thần Tài" class="intro__img-item-link" >
+                            <img  class="intro__img-item" src="https://dulichkhampha24.com/wp-content/uploads/2021/05/dia-diem-du-lich-da-nang-2.jpg" alt="">
+                            <button class="btn btn--yellow intro__img-item-btn">550.000đ</button>
+                        </a>
+                        <a  title="New Phương Đông" class="intro__img-item-link" >
+                            <img  class="intro__img-item" src="https://dulichkhampha24.com/wp-content/uploads/2021/05/dia-diem-du-lich-da-nang-34.jpg" alt="">
+                            <button class="btn btn--yellow intro__img-item-btn">550.000đ</button>
+                        </a>
+                        <a  title="Rạn Nam Ô" class="intro__img-item-link" >
+                            <img  class="intro__img-item" src="https://www.taidanang.com/wp-content/uploads/2019/07/kham-pha-canh-dep-da-nang-tu-cac-diem-du-lich-hot-nhat-7.jpg" alt="">
+                            <button class="btn btn--yellow intro__img-item-btn">650.000đ</button>
+                        </a>
+                        </div>
+                </div>
+
+                <div class="col l-5">
+    
+                    
+                    <div class="intro__img">
+                        <img src="https://www.taidanang.com/wp-content/uploads/2019/07/kham-pha-canh-dep-da-nang-tu-cac-diem-du-lich-hot-nhat-14.jpg" alt="" class="intro__img-item1">
+                    </div>
+                
+                </div>
+                
+
+            </div>
+        </div>
+        <div class="container">
+            
+            <div class="grid wide">
+                <ul  id="tour-day" class="container__header-list">
+                    <li class="container__header-item">T</li>
+                    <li class="container__header-item">O</li>
+                    <li class="container__header-item">U</li>
+                    <li class="container__header-item">R</li>
+                    <li class="container__header-item">H</li>
+                    <li class="container__header-item">Ằ</li>
+                    <li class="container__header-item">N</li>
+                    <li class="container__header-item">G</li>
+                    <li class="container__header-item">N</li>
+                    <li class="container__header-item">G</li>
+                    <li class="container__header-item">À</li>
+                    <li class="container__header-item">Y</li>
+                </ul>
+                <div class="row wide container__content-wrap">
+                    <div class="col l-3 m-6 c-12">
+                        <a class="container__content" href="" >
+                            <div class="container__content-img" style="background-image: url(https://owa.bestprice.vn/images/articles/uploads/top-15-cac-dia-diem-du-lich-da-nang-hot-nhat-ban-khong-the-bo-qua-5ed9d119c20df.jpg);">
+                                <ul class="container__content-star-list">
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <div class="container__content-hot">
+                                    <span class="container__content-hot-text">HOT</span>
+                                </div>
+                            </div>
+                            <div class="container__content-wrap-item">
+                                <div class="container__content-address">
+                                    <i class="container__content-address-icon fas fa-map-marker-alt"></i>
+                                    <span class="container__content-address-name">Hội An</span>
+                                </div>
+                                <div class="container__content-booking">
+                                    <button class="btn btn--yellow">
+                                        ĐẶT NGAY
+                                    </button>
+                                    <div class="container__content-booking-price">
+                                        300.000đ
+                                    </div>
+                                </div>
+                                <div class="container__content-imformation">
+                                    <h4 class="container__content-imformation-text">
+                                        Phố cổ Hội An như một bức tranh mộc mạc, giản dị và nên thơ. Dù là ngày hay đêm  Dù là ngày hay đê
+                                    </h4>
+                                    <button class="btn btn--blue">
+                                        Chi Tiết
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <a class="container__content" href="" >
+                            <div class="container__content-img" style="background-image: url(https://banahills.sunworld.vn/wp-content/uploads/2020/03/L%C3%A0ng-ph%C3%A1p-6-1024x737.jpg);">
+                                <ul class="container__content-star-list">
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <div class="container__content-hot">
+                                    <span class="container__content-hot-text">HOT</span>
+                                </div>
+                            </div>
+                            <div class="container__content-wrap-item">
+                                <div class="container__content-address">
+                                    <i class="container__content-address-icon fas fa-map-marker-alt"></i>
+                                    <span class="container__content-address-name">Bà Nà Hill</span>
+                                </div>
+                                <div class="container__content-booking">
+                                    <button class="btn btn--yellow">
+                                        ĐẶT NGAY
+                                    </button>
+                                    <div class="container__content-booking-price">
+                                        800.000đ
+                                    </div>
+                                </div>
+                                <div class="container__content-imformation">
+                                    <h4 class="container__content-imformation-text">
+                                        Ba Na Hills được mệnh danh là “điểm đến của sự kiện và lễ hội hàng đầu khu vực”. Các lễ hội thường trùng với các dịp lễ, Tết với nhiều trải nghiệm độc đáo, mới lạ. Vào thời gian này, Bà Nà được trang hoàng lộng lẫy, không khí cũng trở nên nhộn nhịp và vui vẻ hơn. 
+                                    </h4>
+                                    <button class="btn btn--blue">
+                                        Chi Tiết
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <a class="container__content" href="" >
+                            <div class="container__content-img" style="background-image: url(https://khachsandanang.shop/uploads/images/images/gia-ve-sun-world-da-nang.jpg);">
+                                <ul class="container__content-star-list">
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <div class="container__content-hot">
+                                    <span class="container__content-hot-text">HOT</span>
+                                </div>
+                            </div>
+                            <div class="container__content-wrap-item">
+                                <div class="container__content-address">
+                                    <i class="container__content-address-icon fas fa-map-marker-alt"></i>
+                                    <span class="container__content-address-name">Công Viên Châu Á</span>
+                                </div>
+                                <div class="container__content-booking">
+                                    <button class="btn btn--yellow">
+                                        ĐẶT NGAY
+                                    </button>
+                                    <div class="container__content-booking-price">
+                                        300.000đ
+                                    </div>
+                                </div>
+                                <div class="container__content-imformation">
+                                    <h4 class="container__content-imformation-text">
+                                        Nằm sát bên cạnh sông Hàn. Nổi bật nhất là chiếc Vòng Quay Mặt Trời lớn và cao nhất Đông Nam Á. Bước chân vào cổng Công Viên Châu Á ( Asia Park ) Đà Nẵng bạn sẽ choáng ngợp bởi cách trang trí nhấp nháy đủ màu sắc tạo nên cảm hứng cho những bạn yêu thích chụp ảnh từ công vào bên trong.
+                                     </h4>
+                                    <button class="btn btn--blue">
+                                        Chi Tiết
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <a class="container__content" href="" >
+                            <div class="container__content-img" style="background-image: url(https://travelservices-lesvos.com/wp-content/uploads/2018/10/kinh-nghiem-du-lich-rung-dua.jpg);">
+                                <ul class="container__content-star-list">
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <div class="container__content-hot">
+                                    <span class="container__content-hot-text">HOT</span>
+                                </div>
+                            </div>
+                            <div class="container__content-wrap-item">
+                                <div class="container__content-address">
+                                    <i class="container__content-address-icon fas fa-map-marker-alt"></i>
+                                    <span class="container__content-address-name">Rừng Dừa Bảy Mẫu</span>
+                                </div>
+                                <div class="container__content-booking">
+                                    <button class="btn btn--yellow">
+                                        ĐẶT NGAY
+                                    </button>
+                                    <div class="container__content-booking-price">
+                                        400.000đ
+                                    </div>
+                                </div>
+                                <div class="container__content-imformation">
+                                    <h4 class="container__content-imformation-text">
+                                        Rừng dừa Bảy Mẫu Cẩm Thanh Hội An khi được đưa vào khai thác du lịch đã trở thành điểm đến hấp dẫn du khách tham quan. Sở dĩ có cái tên này vì ngày xưa, khu rừng này có khoảng 7 mẫu dừa tự do sinh sôi nảy nở.
+                                     </h4>
+                                    <button class="btn btn--blue">
+                                        Chi Tiết
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <a class="container__content" href="" >
+                            <div class="container__content-img" style="background-image: url(https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/08/dai-noi-hue-vntrip.jpg);">
+                                <ul class="container__content-star-list">
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <div class="container__content-hot">
+                                    <span class="container__content-hot-text">HOT</span>
+                                </div>
+                            </div>
+                            <div class="container__content-wrap-item">
+                                <div class="container__content-address">
+                                    <i class="container__content-address-icon fas fa-map-marker-alt"></i>
+                                    <span class="container__content-address-name">Đại Nội Huế</span>
+                                </div>
+                                <div class="container__content-booking">
+                                    <button class="btn btn--yellow">
+                                        ĐẶT NGAY
+                                    </button>
+                                    <div class="container__content-booking-price">
+                                        800.000đ
+                                    </div>
+                                </div>
+                                <div class="container__content-imformation">
+                                    <h4 class="container__content-imformation-text">
+                                        Nằm ngay bên bờ sông Hương thơ mộng, Đại Nội Huế là một quần thế di tích văn hoá được công nhận là di tích văn hoá thế giới. Quần thế Đại Nội Huế bao gồm Hoàng Thành và Tử Cấm Thành, được bao bọc bởi khu vực Kinh thành.
+                                     </h4>
+                                    <button class="btn btn--blue">
+                                        Chi Tiết
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <a class="container__content" href="" >
+                            <div class="container__content-img" style="background-image: url(http://divui.com/blog/wp-content/uploads/2018/05/Thue-xe-tu-Da-Nang-di-Ban-Dao-Son-Tra-Ngu-Hanh-Son-Hoi-An-4.jpg);">
+                                <ul class="container__content-star-list">
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <div class="container__content-hot">
+                                    <span class="container__content-hot-text">HOT</span>
+                                </div>
+                            </div>
+                            <div class="container__content-wrap-item">
+                                <div class="container__content-address">
+                                    <i class="container__content-address-icon fas fa-map-marker-alt"></i>
+                                    <span class="container__content-address-name">Núi Ngũ Hành Sơn</span>
+                                </div>
+                                <div class="container__content-booking">
+                                    <button class="btn btn--yellow">
+                                        ĐẶT NGAY
+                                    </button>
+                                    <div class="container__content-booking-price">
+                                        450.000đ
+                                    </div>
+                                </div>
+                                <div class="container__content-imformation">
+                                    <h4 class="container__content-imformation-text">
+                                        Ngũ Hành Sơn là tên chung của danh thắng gồm 5 ngọn núi đá vôi nhô lên giữa giữa bãi cát ven biển ở Đà Nẵng. Ngũ Hành Sơn gồm có: Kim Sơn, Mộc Sơn, Thủy Sơn, Hỏa Sơn và Thổ Sơn. Trong 5 núi đá ấy, Thủy Sơn là núi đá vôi lớn nhất, cao nhất và đẹp nhất, nơi mà bạn sẽ được chinh phục và khám phá những hang động với những truyền thuyết huyền bí của nó.
+                                    </h4>
+                                    <button class="btn btn--blue">
+                                        Chi Tiết
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <a class="container__content" href="" >
+                            <div class="container__content-img" style="background-image: url(https://dulichkhampha24.com/wp-content/uploads/2017/04/hinh-anh-nui-than-tai.jpg);">
+                                <ul class="container__content-star-list">
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <div class="container__content-hot">
+                                    <span class="container__content-hot-text">HOT</span>
+                                </div>
+                            </div>
+                            <div class="container__content-wrap-item">
+                                <div class="container__content-address">
+                                    <i class="container__content-address-icon fas fa-map-marker-alt"></i>
+                                    <span class="container__content-address-name">Núi Thần Tài</span>
+                                </div>
+                                <div class="container__content-booking">
+                                    <button class="btn btn--yellow">
+                                        ĐẶT NGAY
+                                    </button>
+                                    <div class="container__content-booking-price">
+                                        700.000đ
+                                    </div>
+                                </div>
+                                <div class="container__content-imformation">
+                                    <h4 class="container__content-imformation-text">
+                                        Khu du lịch sinh thái suối khoáng nóng Núi Thần Tài được xây dựng nằm trong khu bảo tồn thiên nhiên Bà Nà núi Chúa luôn mát mẻ quanh năm, với 4 mùa trong ngày. Bởi vậy, bạn có thể đi du lịch Núi Thần Tài bất cứ thời điểm nào, nhưng thời gian thích hợp nhất để đi du lịch Núi Thần Tài vẫn là từ tháng 4 đến tháng 9. Thời điểm này, Đà Nẵng ít mưa, thuận tiện cho đi lại, cũng giúp bạn có thể tránh và giải tỏa đi cái nóng ở khu vực thành phố. 
+                                     </h4>
+                                    <button class="btn btn--blue">
+                                        Chi Tiết
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <a class="container__content" href="" >
+                            <div class="container__content-img" style="background-image: url(https://dulichkhampha24.com/wp-content/uploads/2021/05/dia-diem-du-lich-da-nang-62.jpg);">
+                                <ul class="container__content-star-list">
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <div class="container__content-hot">
+                                    <span class="container__content-hot-text">HOT</span>
+                                </div>
+                            </div>
+                            <div class="container__content-wrap-item">
+                                <div class="container__content-address">
+                                    <i class="container__content-address-icon fas fa-map-marker-alt"></i>
+                                    <span class="container__content-address-name">Chùa Linh Ứng</span>
+                                </div>
+                                <div class="container__content-booking">
+                                    <button class="btn btn--yellow">
+                                        ĐẶT NGAY
+                                    </button>
+                                    <div class="container__content-booking-price">
+                                        650.000đ
+                                    </div>
+                                </div>
+                                <div class="container__content-imformation">
+                                    <h4 class="container__content-imformation-text">
+                                        Tọa lạc ở độ cao 693 m so với mực nước biển, nằm ngay giữa lưng chừng núi. Chùa Linh Ứng Bãi Bụt hay còn gọi là chùa Linh Ứng Sơn Trà mang dáng dấp như một trong tứ linh của người Việt với mặt hướng ra biển, lưng dựa vào khu rừng nguyên sinh bạt ngàn.
+                                     </h4>
+                                    <button class="btn btn--blue">
+                                        Chi Tiết
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                </div>
+                <button class="btn btn--blue btn--more">XEM THÊM</button>
+            </div>
+        </div> 
+        <div class="container2">
+            <div class="grid wide">
+                <ul id="tour-domestic" class="container__header-list ">
+                    <li class="container__header-item2">T</li>
+                    <li class="container__header-item2">O</li>
+                    <li class="container__header-item2">U</li>
+                    <li class="container__header-item2">R</li>
+                    <li class="container__header-item2">T</li>
+                    <li class="container__header-item2">R</li>
+                    <li class="container__header-item2">O</li>
+                    <li class="container__header-item2">N</li>
+                    <li class="container__header-item2">G</li>
+                    <li class="container__header-item2">N</li>
+                    <li class="container__header-item2">Ư</li>
+                    <li class="container__header-item2">Ớ</li>
+                    <li class="container__header-item2">C</li>
+                </ul>
+                <div class="row wide container__content-wrap">
+                   
+                        <div class="col l-3 m-6 c-12">
+                            <a class="container__content" href="" >
+                                <div class="container__content-img" style="background-image: url(https://danangaz.com/wp-content/uploads/2018/09/Gi%C3%A1-L%E1%BA%B7n-Bi%E1%BB%83n-Ng%E1%BA%AFm-San-H%C3%B4-S%C6%A1n-Tr%C3%A0.jpeg);">
+                                    <ul class="container__content-star-list">
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <div class="container__content-hot">
+                                        <span class="container__content-hot-text">HOT</span>
+                                    </div>
+                                </div>
+                                <div class="container__content-wrap-item">
+                                    <div class="container__content-address">
+                                        <i class="container__content-address-icon fas fa-map-marker-alt"></i>
+                                        <span class="container__content-address-name">Cù Lao Chàm</span>
+                                    </div>
+                                    <div class="container__content-booking">
+                                        <button class="btn btn--yellow">
+                                            ĐẶT NGAY
+                                        </button>
+                                        <div class="container__content-booking-price">
+                                            520.000đ
+                                        </div>
+                                    </div>
+                                    <div class="container__content-imformation">
+                                        <h4 class="container__content-imformation-text">
+                                            Cù Lao Chàm thuộc Tân Hiệp, Hội An, Quảng Nam, cách biển Cửa Đại 15 km. Nơi đây gồm 8 đảo là Hòn Lao, Dài, Mồ, Khô Mẹ, Khô Con, Lá, Tai, Ông. Nhiều du khách sau khi thăm thú phổ cổ Hội An thường tới cụm đảo này để tận hưởng vẻ đẹp yên bình, hoang sơ của thiên nhiên.
+                                        </h4>
+                                        <button class="btn btn--blue">
+                                            Chi Tiết
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                           
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <a class="container__content" href="" >
+                                <div class="container__content-img" style="background-image: url(https://huesmiletravel.com.vn/wp-content/uploads/2019/11/vinh-ha-long-1.jpg);">
+                                    <ul class="container__content-star-list">
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <div class="container__content-hot">
+                                        <span class="container__content-hot-text">HOT</span>
+                                    </div>
+                                </div>
+                                <div class="container__content-wrap-item">
+                                    <div class="container__content-address">
+                                        <i class="container__content-address-icon fas fa-map-marker-alt"></i>
+                                        <span class="container__content-address-name">Vịnh Hạ Long</span>
+                                    </div>
+                                    <div class="container__content-booking">
+                                        <button class="btn btn--yellow">
+                                            ĐẶT NGAY
+                                        </button>
+                                        <div class="container__content-booking-price">
+                                            999.000đ
+                                        </div>
+                                    </div>
+                                    <div class="container__content-imformation">
+                                        <h4 class="container__content-imformation-text">
+                                            Vịnh Hạ Long là cái tên quá nổi tiếng trong làng du lịch Việt Nam. Không chỉ gây ấn tượng với du khách bởi sự tuyệt vời của thiên nhiên tạo hoá, những tảng đá có tạo hình tuyệt mỹ, độc đáo hay cảnh sắc trời mây sông nước đẹp như tranh, vịnh Hạ Long còn mang lại cảm giác bình yên, thoải mái cho du khách mỗi khi đến đây.
+                                         </h4>
+                                        <button class="btn btn--blue">
+                                            Chi Tiết
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                           
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <a class="container__content" href="" >
+                                <div class="container__content-img" style="background-image: url(https://huesmiletravel.com.vn/wp-content/uploads/2019/11/phong-nha-ke-bang-la-kiet-tac-cua-tao-hoa-1.jpg);">
+                                    <ul class="container__content-star-list">
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <div class="container__content-hot">
+                                        <span class="container__content-hot-text">HOT</span>
+                                    </div>
+                                </div>
+                                <div class="container__content-wrap-item">
+                                    <div class="container__content-address">
+                                        <i class="container__content-address-icon fas fa-map-marker-alt"></i>
+                                        <span class="container__content-address-name">Phong Nha- Kẻ Bàng </span>
+                                    </div>
+                                    <div class="container__content-booking">
+                                        <button class="btn btn--yellow">
+                                            ĐẶT NGAY
+                                        </button>
+                                        <div class="container__content-booking-price">
+                                            890.000đ
+                                        </div>
+                                    </div>
+                                    <div class="container__content-imformation">
+                                        <h4 class="container__content-imformation-text">
+                                            Vườn quốc gia Phong Nha – Kẻ Bàng từ lâu đã trở thành điểm du lịch hot nhất Việt Nam. Phong Nha – Kẻ Bảng ở Quảng Bình có cảnh quan thơ mộng, hệ thống hang động vô cùng ấn tượng, sông núi bạt ngàn, nhiều loài động thực vật quý hiếm, thu hút hàng triệu lượt khách du lịch mỗi năm cũng như nhiều nhà thám hiểm khắp nơi trên thế giới đến khám phá.
+                                         </h4>
+                                        <button class="btn btn--blue">
+                                            Chi Tiết
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                           
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <a class="container__content" href="" >
+                                <div class="container__content-img" style="background-image: url(https://huesmiletravel.com.vn/wp-content/uploads/2019/11/dao-binh-ba-nha-trang.jpg);">
+                                    <ul class="container__content-star-list">
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <div class="container__content-hot">
+                                        <span class="container__content-hot-text">HOT</span>
+                                    </div>
+                                </div>
+                                <div class="container__content-wrap-item">
+                                    <div class="container__content-address">
+                                        <i class="container__content-address-icon fas fa-map-marker-alt"></i>
+                                        <span class="container__content-address-name">Nha Trang – Khánh Hoà</span>
+                                    </div>
+                                    <div class="container__content-booking">
+                                        <button class="btn btn--yellow">
+                                            ĐẶT NGAY
+                                        </button>
+                                        <div class="container__content-booking-price">
+                                            1.200.000đ
+                                        </div>
+                                    </div>
+                                    <div class="container__content-imformation">
+                                        <h4 class="container__content-imformation-text">
+                                            Thiên đường du lịch Nha Trang là một trong những vịnh biển đẹp nhất thế giới. Đến với Nha Trang, du khách sẽ được khám phá những chân trời mới như khu du lịch Vinpearland, kiến trúc Chăm độc đáo … Hoà mình vào bầu không khí trong lành, cùng những bãi biển đẹp diệu kì, vui chơi tại công viên giải trí, tận hưởng dịch vụ tắm bùn, chơi golf … du khách sẽ có những trải nghiệm cực kì thú vị.
+                                        </h4>
+                                        <button class="btn btn--blue">
+                                            Chi Tiết
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                           
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <a class="container__content" href="" >
+                                <div class="container__content-img" style="background-image: url(https://huesmiletravel.com.vn/wp-content/uploads/2019/11/vuon-hoa-da-lat.jpg);">
+                                    <ul class="container__content-star-list">
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                        <li class="container__content-star-item"><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <div class="container__content-hot">
+                                        <span class="container__content-hot-text">HOT</span>
+                                    </div>
+                                </div>
+                                <div class="container__content-wrap-item">
+                                    <div class="container__content-address">
+                                        <i class="container__content-address-icon fas fa-map-marker-alt"></i>
+                                        <span class="container__content-address-name">Đà Lạt</span>
+                                    </div>
+                                    <div class="container__content-booking">
+                                        <button class="btn btn--yellow">
+                                            ĐẶT NGAY
+                                        </button>
+                                        <div class="container__content-booking-price">
+                                            1.500.000đ
+                                        </div>
+                                    </div>
+                                    <div class="container__content-imformation">
+                                        <h4 class="container__content-imformation-text">
+                                            Đà Lạt là một thành phố mộng mơ, huyền ảo trong làn sương mù trắng xoá và luôn ngập tràn muôn sắc hoa. Khí hậu ôn hoà, ấm áp của Đà Lạt cũng là một trong những lí do lôi cuốn khách du lịch tới tham quan, du lịch và nghỉ dưỡng.
+                                        </h4>
+                                        <button class="btn btn--blue">
+                                            Chi Tiết
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                           
+                        </div>
+                       
+                    
+                </div>
+                <button class="btn btn--blue  btn--more">XEM THÊM</button>
+                
+            </div>
+           
+        </div>   
+        
+        
+        <div class="imformation">
+            <img class="imformation-background" src="https://mtrend.vn/wp-content/uploads/2019/05/anh-bien-beach-10.jpg" alt="">
+            <div class="imformation__body">
+                <h1 class="imformation__body-heading">ĐỂ LẠI THÔNG TIN LIÊN HỆ</h1>
+                <div class="imformation__body-wrap">
+                    <div class="imformation__body-name-gmail">
+                        <input type="text" class="imformation__body-name imformation__body-name-gmail-general" placeholder="Họ và tên">
+                        <input type="email" class="imformation__body-gmail imformation__body-name-gmail-general" placeholder="Email">
+                        <input type="tel" class="imformation__body-phone_number imformation__body-name-gmail-general" placeholder="Số điện thoại">
+
+                    </div>
+                    <div class="imformation__body-mess">
+                        <input class="imformation__body-name-gmail-general imformation__body-mess-input" type="text" placeholder="Message">
+                        <button class="imformation__body-mess-send btn">
+                            GỬI
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+
+            <div class="grid wide">
+                <div class="row footer__content-wrap">
+                    <div class="col l-4 m-6 c-12 footer__content">
+                        <h2 class="footer__heading">Hỗ trợ qua điện thoại</h2>
+                        <div class="footer__sub-heading">Luôn sẵn sàn 24/7</div>
+                        <div class="footer__contact">(+84) 33 995 7137</div>
+                    </div>
+                    <div class="col l-4 m-6 c-12 footer__content">
+                        <h2 class="footer__heading">Kết nối với chúng tôi</h2>
+                        <div class="footer__sub-heading">Kênh mạng xã hội</div>
+                        <ul class="footer__contact-icon-list">
+                            <li class="footer__contact-icon-item"><a href="" class="footer__contact-icon-item-link"><i class="fab fa-instagram"></i></a></li>
+                            <li class="footer__contact-icon-item"><a href="" class="footer__contact-icon-item-link"><i class="fab fa-twitter"></i></a></li>
+                            <li class="footer__contact-icon-item"><a href="" class="footer__contact-icon-item-link"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="footer__contact-icon-item"><a href="" class="footer__contact-icon-item-link"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li class="footer__contact-icon-item"><a href="" class="footer__contact-icon-item-link"><i class="fab fa-youtube"></i></a></li>
+                        </ul> 
+                    </div>
+                    <div class="col l-4 m-12 c-12 footer__content">
+                        <h2 class="footer__heading">Thông báo mới</h2>
+                        <div class="footer__sub-heading">Đăng kí nhận khuyến mãi mới</div>
+                        <div class="footer__contact-auth">
+                            <input type="email" class="footer__contact-auth-input" placeholder="Email"><button
+                             class="footer__contact-auth-btn">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+    </div>
+</body>
+</html>
